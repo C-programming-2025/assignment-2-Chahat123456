@@ -6,14 +6,18 @@ int main()
 {
     int n, i = 1;
 
-    printf("Enter a positive number: ");
     scanf("%d", &n);
 
     while (i <= 10)
     {
-        printf("%d * %d = %d\n", n, i, n * i);
+        printf("%d", n * i);
+        if (i < 10)
+        {
+            printf(" ");
+        }
         i++;
     }
 
+    printf("\n");
     return 0;
 }

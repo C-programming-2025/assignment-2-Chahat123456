@@ -3,31 +3,20 @@
 
 int main()
 {
-    int n, i = 2, isPrime = 1;
+    int n, i;
 
-    printf("Enter any positive number: ");
+    printf("Enter a positive integer: ");
     scanf("%d", &n);
 
-    if (n <= 1)
-    {
-        printf("Not prime\n");
-        return 0;
-    }
-
-    while (i <= n / 2)
+    printf("Factors of %d are: ", n);
+    for (i = 1; i <= n; i++)
     {
         if (n % i == 0)
         {
-            isPrime = 0;
-            break;
+            printf("%d ", i);
         }
-        i++;
     }
-
-    if (isPrime)
-        printf("Prime\n");
-    else
-        printf("Not prime\n");
+    printf("\n");
 
     return 0;
 }

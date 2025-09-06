@@ -16,7 +16,11 @@ int main()
     {
         for (j = 0; j < n; j++)
         {
-            printf("* ");
+            printf("*");
+            if (j < n - 1)
+            {
+                printf(" ");
+            }
         }
         printf("\n");
     }
