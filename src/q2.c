@@ -3,3 +3,22 @@ Expected Output:
 If age >= 18, print Eligible to vote (case-insensitive, extra messages allowed).
 If age < 18, print Not eligible to vote (case-insensitive, extra messages allowed).
 */
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf("enter age: ");
+    scanf("%d", &n);
+    if (n >= 18)
+    {
+        printf("Eligible to vote");
+    }
+    else if (n < 18)
+    {
+        printf("Not Eligible to vote");
+    }
+    else
+    {
+        printf("Invalid");
+    }
+}
