@@ -3,17 +3,13 @@
 
 int main()
 {
-    int n, i = 1;
-
-    scanf("%d", &n);
+    int num, i = 1;
+    printf("Enter a number: ");
+    scanf("%d", &num);
 
     do
     {
-        printf("%d", n * i);
-        if (i < 10)
-        {
-            printf(" ");
-        }
+        printf("%d ", num * i);
         i++;
     } while (i <= 10);
 

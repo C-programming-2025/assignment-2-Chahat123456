@@ -4,20 +4,21 @@
 
 int main()
 {
-    int n, i = 1;
+    int num, i = 1;
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
 
-    scanf("%d", &n);
+    if (num <= 0)
+    {
+        printf("Please enter a positive integer.\n");
+        return 1;
+    }
 
     while (i <= 10)
     {
-        printf("%d", n * i);
-        if (i < 10)
-        {
-            printf(" ");
-        }
+        printf("%d ", num * i);
         i++;
     }
-
     printf("\n");
     return 0;
 }

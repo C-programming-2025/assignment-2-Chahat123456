@@ -3,16 +3,20 @@
 
 int main()
 {
-    int n, i;
-
+    int num;
     printf("Enter a positive integer: ");
-    scanf("%d", &n);
+    scanf("%d", &num);
 
-    printf("Countdown:\n");
-    for (i = n; i >= 1; i--)
+    if (num <= 0)
     {
-        printf("%d\n", i);
+        printf("Please enter a positive integer.\n");
+        return 1;
     }
 
+    for (int i = num; i >= 1; i--)
+    {
+        printf("%d ", i);
+    }
+    printf("\n");
     return 0;
 }

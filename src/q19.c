@@ -7,18 +7,23 @@ Example: User’s Input = 2, then pattern to print will be:
 
 int main()
 {
-    int n, i, j;
-
+    int n;
     printf("Enter a positive integer: ");
     scanf("%d", &n);
 
-    for (i = 0; i < n; i++)
+    if (n <= 0)
     {
-        for (j = 0; j < n; j++)
-        {
+        printf("Please enter a positive integer.\n");
+        return 1;
+    }
+
+    for (int i = 0; i < n; i++)
+    { // rows
+        for (int j = 0; j < n; j++)
+        { // columns
             printf("*");
-            if (j < n - 1)
-            {
+            if (j != n - 1)
+            { // add space except after last *
                 printf(" ");
             }
         }

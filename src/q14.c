@@ -3,20 +3,23 @@
 
 int main()
 {
-    int n, i;
-
+    int num;
     printf("Enter a positive integer: ");
-    scanf("%d", &n);
+    scanf("%d", &num);
 
-    printf("Factors of %d are: ", n);
-    for (i = 1; i <= n; i++)
+    if (num <= 0)
     {
-        if (n % i == 0)
+        printf("Please enter a positive integer.\n");
+        return 1;
+    }
+
+    for (int i = 1; i <= num; i++)
+    {
+        if (num % i == 0)
         {
             printf("%d ", i);
         }
     }
     printf("\n");
-
     return 0;
 }
