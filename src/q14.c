@@ -3,23 +3,15 @@
 
 int main()
 {
-    int num;
-    printf("Enter a positive integer: ");
-    scanf("%d", &num);
-
-    if (num <= 0)
+    int p;
+    int r = 1;
+    scanf("%d", &p);
+    for (int r = 1; r <= p; r++)
     {
-        printf("Please enter a positive integer.\n");
-        return 1;
-    }
-
-    for (int i = 1; i <= num; i++)
-    {
-        if (num % i == 0)
+        if (p % r == 0)
         {
-            printf("%d ", i);
+            printf("%d ", r);
         }
     }
-    printf("\n");
     return 0;
 }

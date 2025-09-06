@@ -3,20 +3,12 @@
 
 int main()
 {
-    int num;
-    printf("Enter a positive integer: ");
-    scanf("%d", &num);
+    int pint;
+    scanf("%d", &pint);
 
-    if (num <= 0)
+    for (int r = pint; r >= 1; r--)
     {
-        printf("Please enter a positive integer.\n");
-        return 1;
+        printf("%d ", r);
     }
-
-    for (int i = num; i >= 1; i--)
-    {
-        printf("%d ", i);
-    }
-    printf("\n");
     return 0;
 }

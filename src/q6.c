@@ -3,16 +3,14 @@
 
 int main()
 {
-    int num, i = 1;
-    printf("Enter a number: ");
-    scanf("%d", &num);
+    int p;
+    scanf("%d", &p);
 
+    int r = 1;
     do
     {
-        printf("%d ", num * i);
-        i++;
-    } while (i <= 10);
-
-    printf("\n");
+        printf("%d ", p * r);
+        r++;
+    } while (r <= 10);
     return 0;
 }

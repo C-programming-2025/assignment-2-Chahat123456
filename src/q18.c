@@ -4,21 +4,15 @@
 
 int main()
 {
-    int num, i = 1;
-    printf("Enter a positive integer: ");
-    scanf("%d", &num);
+    int pint;
+    scanf("%d", &pint);
 
-    if (num <= 0)
+    int r = 1;
+    while (r <= 10)
     {
-        printf("Please enter a positive integer.\n");
-        return 1;
+        printf("%d ", pint * r);
+        r++;
     }
 
-    while (i <= 10)
-    {
-        printf("%d ", num * i);
-        i++;
-    }
-    printf("\n");
     return 0;
 }
