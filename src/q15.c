@@ -1,23 +1,33 @@
 // Write a C program that prompts the user for a positive integer and checks if it is a prime number using a while loop.
+#include <stdio.h>
+
 int main()
 {
-    int n, a = 0;
-    printf("Rnter any number\n");
+    int n, i = 2, isPrime = 1;
+
+    printf("Enter any positive number: ");
     scanf("%d", &n);
-    for (int i = 1; i < n; i++)
+
+    if (n <= 1)
+    {
+        printf("Not prime\n");
+        return 0;
+    }
+
+    while (i <= n / 2)
     {
         if (n % i == 0)
         {
-            a++;
+            isPrime = 0;
+            break;
         }
+        i++;
     }
-    if (a == 2)
-    {
-        printf("Prime");
-    }
+
+    if (isPrime)
+        printf("Prime\n");
     else
-    {
-        printf("not prime");
-    }
+        printf("Not prime\n");
+
     return 0;
 }

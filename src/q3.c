@@ -13,6 +13,11 @@ int main()
     {
         ab_val = -n;
     }
+    else if (n == 0)
+    {
+        ab_val = n;
+    }
+
     printf("the absolute value is: %d", ab_val);
     return 0;
 }

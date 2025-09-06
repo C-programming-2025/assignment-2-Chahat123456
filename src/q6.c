@@ -9,7 +9,7 @@ int main()
     do
     {
         tab = n * i;
-        printf("%d * %d = %d\n", n, i, tab);
+        printf("%d ", tab);
         i++;
     } while (i <= 10);
 }
